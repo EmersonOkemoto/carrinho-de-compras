@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    height: 100vh; /* Altura de 100% da altura da janela */
+}
+
+/* Estilo para o container do carrinho */
+.container-carrinho {
+    color: whitesmoke;
+    background-color: #18181B;
+    max-height: 100vh;
+    width: 360px;
+    padding: 8px 16px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+/* Estilo para a parte superior do carrinho, onde mostra o total de itens */
+.itensTotais-carrinho {
+    max-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+/* Estilo para o botão de fechar */
+.botaoFechar {
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Efeito quando o botão de fechar é pressionado */
+.botaoFechar:active {
+    color: red;
+}
+
+/* Estilo para a área de itens do carrinho */
+.itens {
+    max-height: 55vh;
+    overflow-y: auto; /* Habilita a rolagem vertical */
+    box-sizing: border-box; /* Garante que padding não afete o tamanho total */
+}
+
+/* Estilo para cada item individual do carrinho */
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+/* Estilo para as imagens dos itens */
+.item img {
+    cursor: zoom-in;
+    width: 75px;
+    height: 75px;
+    border-radius: 8px;
+    margin-right: 16px;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Estilo para as informações do item */
+.item-informacao {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Faz com que ocupe o espaço restante */
+}
+.item-informacao a {
+    cursor: pointer;
+}
+
+/* Estilo para o preço e a quantidade */
+.precoEQuantidade {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantidade {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Estilo para os botões de quantidade */
+.quantidade button {
+    background: transparent;
+    color: white;
+    border: 3px solid #4B4B4B;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0px 5px; /* Espaçamento entre os botões */
+}
+
+/* Efeito quando o botão de quantidade é pressionado */
+.quantidade button:active {
+    color: blueviolet;
+    border-color: blueviolet;
+}
+
+/* Estilo da parte final do carrinho */
+.carrinho-parteFinal {
+    max-height: 30vh;
+}
+
+/* Estilo para o total de valor */
+.totalValor {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0px; /* Margem superior e inferior */
+    font-size: large;
+    font-weight: bold;
+}
+
+/* Estilo para os botões da parte final */
+.botaoCupomAndFinalizar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espaçamento entre os itens */
+}
+
+/* Estilo para o botão de adicionar cupom */
+.addCupom {
+    color: blueviolet;
+    font-size: smaller;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+}
+
+/* Efeito quando o botão de adicionar cupom é pressionado */
+.addCupom:active {
+    color: white;
+}
+
+/* Estilo para o botão de finalizar compra */
+.buttonFinalizarCompra {
+    color: white;
+    background: blueviolet;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttonFinalizarCompra:hover {
+    background: white;
+    color: blueviolet;
+}
+
+.buttonFinalizarCompra:active {
+    background: pink;
+    color: red;
+}
