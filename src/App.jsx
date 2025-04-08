@@ -1,10 +1,13 @@
-import './App.css'
-import Carrinho from "./components/carrinho/Carrinho.jsx";
+// src\App.jsx
 
-export default function App() {
+import Produtos from './components/produtos';
+
+function App() {
   return (
-    <div>
-      <Carrinho />
-    </div>
+    <>
+      <Produtos />
+    </>
   );
 }
+
+export default App;

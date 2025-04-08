@@ -3,14 +3,15 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: white;
     height: 100vh; /* Altura de 100% da altura da janela */
 }
 
 /* Estilo para o container do carrinho */
 .container-carrinho {
     color: whitesmoke;
-    background-color: #18181B;
+    background-color: black;
+    border: 3px solid red;
     max-height: 100vh;
     width: 360px;
     padding: 8px 16px;
@@ -18,6 +19,7 @@ body {
     right: 0;
     top: 0;
     overflow: hidden;
+    z-index: 9999; /* container carrinho acima de todos os elementos*/
 }
 
 /* Estilo para a parte superior do carrinho, onde mostra o total de itens */
@@ -35,20 +37,23 @@ body {
     background: none;
     border: none;
     color: whitesmoke;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 22px;
     cursor: pointer;
+    top: 12px;
 }
 
 /* Efeito quando o botão de fechar é pressionado */
-.botaoFechar:active {
+.botaoFechar:hover {
     color: red;
+    transform: scale(1.5);
 }
 
 /* Estilo para a área de itens do carrinho */
 .itens {
     max-height: 55vh;
     overflow-y: auto; /* Habilita a rolagem vertical */
-    box-sizing: border-box; /* Garante que padding não afete o tamanho total */
+    padding-right: 8px; /* Garante que padding não afete o tamanho total */
 }
 
 /* Estilo para cada item individual do carrinho */
@@ -76,6 +81,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1; /* Faz com que ocupe o espaço restante */
+    /* word-break: break-word; */
 }
 .item-informacao a {
     cursor: pointer;
@@ -144,8 +150,9 @@ body {
 }
 
 /* Efeito quando o botão de adicionar cupom é pressionado */
-.addCupom:active {
+.addCupom:hover {
     color: white;
+    transform: scale(1.05);
 }
 
 /* Estilo para o botão de finalizar compra */
@@ -162,9 +169,5 @@ body {
 .buttonFinalizarCompra:hover {
     background: white;
     color: blueviolet;
-}
-
-.buttonFinalizarCompra:active {
-    background: pink;
-    color: red;
+    transform: scale(1.05);
 }
