@@ -1,6 +1,6 @@
 // src/components/produtos/index.jsx
 import React, { useState } from "react";
-import "./produtos.css";
+import "./style.css";
 import { produtos } from "./produtos";
 import Carrinho from "../carrinho";
 
@@ -14,7 +14,7 @@ export default function Produtos() {
 
     return (
         <div>
-            <div className="cartButton">
+            <div className="button-cart">
                 <button onClick={() => setShowCart(true)}>Carrinho</button>
                 {cartItems.length > 0 && (
                     <span className="cartCount">{cartItems.length}</span>

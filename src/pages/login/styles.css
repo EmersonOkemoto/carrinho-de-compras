@@ -1,0 +1,93 @@
+/* Fundo geral da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* Container central do login */
+.login-container {
+    background-color: black; /* roxo escuro */
+    padding: 40px;
+    max-width: 400px;
+    margin: 80px auto;
+    border: 3px solid blueviolet;
+    text-align: center;
+    box-shadow: 0 0 100vh 50px rgba(138, 43, 226, 0.4);
+    /* Sobre box-shadow
+    Offset-x (0): A sombra não se move horizontalmente.
+    Offset-y (0): A sombra não se move verticalmente.
+    Blur-radius (100vh): A desfocagem ainda é bem grande, ocupando toda a altura da tela.
+    Spread-radius (50px): A sombra agora se expande 50 pixels em todas as direções, aumentando sua área.
+    Color (rgba(138, 43, 226, 0.4)): A cor continua roxa com 40% de opacidade. */
+}
+
+/* Título */
+.login-container h2 {
+    margin-bottom: 30px;
+    color: whitesmoke;
+}
+
+/* Grupo de entrada (label + input) */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: whitesmoke;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3d0052;
+    color: white;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.input-group input:focus {
+    background-color: #50006e;
+}
+
+/* Botão de login */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #800080; /* púrpura */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #9b30ff;
+}
+
+.home-button,
+.criar-conta-button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 2px solid #800080;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.home-button:hover,
+.criar-conta-button:hover {
+    background-color: #800080;
+    color: white;
+}

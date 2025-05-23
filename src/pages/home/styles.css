@@ -1,0 +1,96 @@
+/* Reset básico e fundo completo */
+* {
+    box-sizing: border-box;
+}
+/* Reset total do body e html para evitar bordas brancas */
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Container centralizado */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Caixa de conteúdo */
+.home-box {
+    background-color: #111;
+    padding: 40px;
+    border-radius: 12px;
+    border-color: blueviolet;
+    box-shadow: 0 0 10px blueviolet;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Título */
+.home-box h1 {
+    color: blueviolet;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Texto */
+.home-box p {
+    color: #ccc;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Estilo base dos botões */
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+/* Botão 1: Ir para login */
+.button-1 {
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid whitesmoke;
+}
+
+.button-1:hover {
+    background-color: darkviolet;
+}
+
+/* Botão 2: Criar login */
+.button-2 {
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid whitesmoke;
+}
+
+.button-2:hover {
+    background-color: darkviolet;
+    color: white;
+}
+
+/* Botão 3: Ver produtos */
+.button-3 {
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid whitesmoke;
+}
+
+.button-3:hover {
+    background-color: darkviolet;
+    color: white;
+}

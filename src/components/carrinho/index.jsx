@@ -1,6 +1,6 @@
 // src/components/carrinho/index.jsx
 import React from "react";
-import "./carrinho.css";
+import "./style.css";
 
 export default function Carrinho({ cartItems, setCartItems, onClose }) {
     const totalValor = cartItems.reduce((total, item) => total + item.preco, 0).toFixed(2);

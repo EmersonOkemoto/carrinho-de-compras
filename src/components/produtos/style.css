@@ -4,29 +4,25 @@ body {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     background-color: white;
-    height: 100vh; /* Altura de 100% da altura da janela */
+    height: 100vh;
+    /* Altura de 100% da altura da janela */
 }
 
-/* Carrinho no canto direito*/
-.cartButton {
+
+/* Botão do carrinho fixado no canto superior direito */
+.button-cart {
     position: fixed;
     top: 0;
     right: 0;
-}
-
-.cartButton {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 8888; /* botão carinho acima dos produtos, mas atrás do container carrinho quando este estiver aberto */
+    z-index: 8888;
+    /* botão carinho acima dos produtos, mas atrás do container carrinho quando este estiver aberto */
     display: flex;
     align-items: center;
-    padding: 10px;
     background-color: transparent;
-    padding: 10px;
+    border: 3px solid white;
 }
 
-.cartButton button:hover {
+.button-cart:hover {
     background-color: violet;
     transform: scale(1.3);
 }
@@ -41,19 +37,20 @@ body {
     font-size: 14px;
 }
 
-/* Lista de produtos */
+/* grid de produtos */
 .produtos {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);    overflow-y: auto;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-y: auto;
     gap: 24px;
     margin: 10px 10px 10px 10px;
-    padding: 24px;
+    padding: 5rem;
     background-color: black;
     max-height: 90vh;
 }
 
 
-/* Cada produto */
+/* estilo de cada produto */
 .produto {
     background-color: black;
     border: 3px solid white;

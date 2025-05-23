@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 import './Carrinho.css'
 import item01 from '../../assets/item01.png';
 
@@ -102,3 +102,4 @@ export default function Carrinho() {
         </div>
     )
 }
+ */
