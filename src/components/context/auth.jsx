@@ -9,7 +9,6 @@ import React, { createContext, useState } from "react";
 // Criando um contexto de autenticação
 export const AuthContext = createContext();
 
-
 export default function AuthProvider({ children }) {
     // Estado para armazenar o status de autenticação
     const [auth, setAuth] = useState(true); // Inicialmente, o usuário está autenticado (true)
