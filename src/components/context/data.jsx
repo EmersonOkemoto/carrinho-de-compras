@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import { LerProdutos } from "../data/fetchProdutos";
 
 export const DataContext = createContext();
 
