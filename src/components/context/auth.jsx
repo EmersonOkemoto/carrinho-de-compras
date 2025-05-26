@@ -19,13 +19,12 @@ export default function AuthProvider({ children }) {
      */
     const teste = () => {
         console.log("teste"); // Exibe "teste" no console quando chamada
-        };
-        
-        return (
-            // Provedor do contexto, permitindo que componentes filhos acessem auth, setAuth e teste
-            <AuthContext.Provider value={{ auth, setAuth, teste }}>
-                {children}
-            </AuthContext.Provider>
-        );
-    }
+    };
+
+    return (
+        // Provedor do contexto, permitindo que componentes filhos acessem auth, setAuth e teste
+        <AuthContext.Provider value={{ auth, setAuth, teste }}>
+            {children}
+        </AuthContext.Provider>
+    );
 }
