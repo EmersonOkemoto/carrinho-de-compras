@@ -1,0 +1,47 @@
+/* CriarProduto.css */
+
+.criar-produto-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza o conteúdo dentro do container */
+
+  border: 3px solid blueviolet; /* borda vermelha adicionada */
+  border-radius: 8px; /* para ficar com cantos arredondados */
+  
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.4);
+}
+
+.formulario {
+  width: 100%; /* ocupa toda largura do container */
+  max-width: 300px; /* limita a largura do formulário */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza os elementos dentro do form */
+}
+
+.formulario input {
+  width: 100%; /* ocupa 100% do form (máx 300px) */
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: blueviolet;
+}
+
+.formulario p {
+  margin: 10px 0 4px;
+  font-weight: bold;
+  text-align: center;
+}
