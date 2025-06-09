@@ -28,8 +28,8 @@ export default function AppRoutes() {
                 }
             />
             <Route path="/produtos/criar" element={<CriarProduto />} />
-            <Route path="/produtos/editar" element={<EditarProduto />} />
-            <Route path="/produtos/remover" element={<RemoverProduto />} />
+            <Route path="/produtos/editar/:id" element={<EditarProduto />} />
+            <Route path="/produtos/deletar/:id" element={<RemoverProduto />} />
         </Routes>
     );
 }
