@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './CriarProduto.css'; // Descomente quando o CSS for criado
+import './CriarProduto.css';
 
 function CriarProduto() {
   const [nome, setNome] = useState('');
