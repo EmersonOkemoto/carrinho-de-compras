@@ -15,7 +15,7 @@ body {
     top: 0;
     right: 0;
     z-index: 8888;
-    /* botão carinho acima dos produtos, mas atrás do container carrinho quando este estiver aberto */
+    /* botão carrinho acima dos produtos, mas atrás do container carrinho quando este estiver aberto */
     display: flex;
     align-items: center;
     background-color: transparent;
