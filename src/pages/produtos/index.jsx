@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import ModalCriar from "./ModalCriar";
-import ModalEditar from "./ModalEditar";
-import ModalDeletar from "./ModalDeletar";
+import CriarProduto from "./CriarProduto";
+import EditarProduto from "./EditarProduto";
+import RemoverProduto from "./RemoverProduto";
+
 
 export default function Produtos() {
   const [produtos, setProdutos] = useState([]);
@@ -42,20 +43,20 @@ export default function Produtos() {
       </ul>
 
       {modalCriarAberto && (
-        <ModalCriar
+        <CriarProduto
           onClose={() => setModalCriarAberto(false)}
           onRefresh={carregarProdutos}
         />
       )}
       {modalEditarAberto && (
-        <ModalEditar
+        <EditarProduto
           produto={produtoSelecionado}
           onClose={() => setModalEditarAberto(false)}
           onRefresh={carregarProdutos}
         />
       )}
       {modalDeletarAberto && (
-        <ModalDeletar
+        <RemoverProduto
           produto={produtoSelecionado}
           onClose={() => setModalDeletarAberto(false)}
           onRefresh={carregarProdutos}
